@@ -1,0 +1,122 @@
+/* ------------------ Reset [start] ------------------ */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; }
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; }
+
+::selection { background: rgb(255,255,158); }
+::-moz-selection { background: rgb(255,255,158); }
+img::selection { background: transparent; }
+img::-moz-selection { background: transparent; }
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active,
+select:focus,
+select:active { outline: 0; }
+input:hover { cursor: text; }
+textarea { overflow: auto; }
+input[disabled] { cursor: default; }
+input[type=checkbox],
+input[type=radio],
+input[type=submit],
+input[type=reset],
+input[type=file],
+select { cursor: pointer; }
+
+:hover,
+:active,
+a:link { -webkit-transition: .15s ease-in-out; -moz-transition: .15s ease-in-out; -o-transition: .15s ease-in-out; transition: .15s ease-in-out; }
+a img { border: 0; }
+
+body { -webkit-tap-highlight-color: rgb(255,255,158); }
+
+ul, ol { list-style-type: none; }
+
+/* ------------------ Reset [end] ------------------ */
+
+
+/* ------------------ Fonts [start] ------------------ */
+
+@font-face { font-family: 'BebasNeueRegular'; src: url('fonts/BebasNeue-webfont.eot'); src: url('fonts/BebasNeue-webfontd41d.eot?#iefix') format('embedded-opentype'), url('fonts/BebasNeue-webfont.woff') format('woff'), url('fonts/BebasNeue-webfont.ttf') format('truetype'), url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg'); font-weight: normal; font-style: normal; }
+
+/* ------------------ Fonts [end] ------------------ */
+
+
+/* ------------------ Main styles [start] ------------------ */
+
+body { background-color: #fff; font: 16px/19px arial, helvetica, sans-serif; color: #0c3f4c; }
+
+header { width: 940px; position: relative; margin: 60px auto 0; clear: both; }
+header h1 { width: 386px; height: 163px; font: 0/0 serif; text-indent: -9999px; background: transparent url('../img/storefy.gif') 0 0 no-repeat; float: left; }
+header h2 { position: absolute; top: 125px; left: 70px; font: 20px/24px 'BebasNeueRegular', arial, sans-serif; z-index: 1; }
+header h3 { width: 400px; height: 100px; color: #0c3f4c; margin: 20px 15px 0 0; text-shadow: 1px 1px 0 #fff; background: transparent url('../img/backg_top.gif') 0 0 no-repeat; font-size: 14px; font-weight: normal; padding: 20px 40px 0; float: right; }
+header h3 a { font-weight: bold; text-decoration: none; color: #0c3f4c; }
+header h3 .break { display: block; }
+header h3 a:hover,
+header h3 a:active { color: #000; }
+
+ul.products { width: 940px; margin: 0 auto; padding: 40px 0 20px; text-align: center; clear: both; }
+ul.products li { display: inline; margin: 0 13px; clear: left; }
+ul.products li a { display: inline-block; text-decoration: none; color: #0c3f4c; }
+ul.products li a img { border: 1px solid #ddd; padding: 20px 10px; }
+ul.products li a:hover img,
+ul.products li a:active img { border: 1px dashed #0c3f4c; }
+ul.products li a b,
+ul.products li a span,
+ul.products li a strong { display: block; font-weight: normal; }
+ul.products li a b { font-size: 14px; }
+ul.products li a b em { font-style: normal; text-decoration: line-through; }
+ul.products li a span,
+ul.products li a strong { font-size: 18px; line-height: 28px; }
+
+h4 { width: 940px; height: 30px; margin: 0 auto; padding: 40px 0 5px; border-bottom: 6px solid #00a9e0; }
+h4 strong { font-weight: normal; font: 22px/28px 'BebasNeueRegular', arial, sans-serif; float: left; }
+h4 span { display: inline-block; font: 0/0 serif; text-indent: -9999px; margin: 2px 8px 0; background: transparent url('../img/logo_rt.gif') 0 0 no-repeat; width: 28px; height: 19px; float: left;}
+
+article { width: 940px; margin: 0 auto; padding: 40px 0 0; clear: both; }
+article figure { width: 500px; margin-bottom: 40px; float: left; }
+article aside { width: 440px; float: left; }
+article aside nav { margin-bottom: 60px; }
+article aside nav a { text-decoration: none; color: #0c3f4c; }
+article aside nav a:hover,
+article aside nav a:active { color: #000; }
+article aside h5 { font-size: 30px; line-height: 34px; font-weight: normal; }
+article aside h6 { font-size: 24px; line-height: 34px; font-weight: normal; }
+article aside p { margin: 20px 0; clear: both; }
+article aside b,
+article aside span { display: block; line-height: 28px; font-weight: normal; }
+article aside b { font-size: 18px; }
+article aside b em { font-style: normal; text-decoration: line-through; }
+article aside span { font-size: 24px; }
+article aside a.buy { display: inline-block; text-decoration: none; background-color: #edf6f9; margin: 30px 0 0; padding: 12px 40px; text-transform: uppercase; color: #0c3f4c; text-shadow: 1px 1px 0 #fff; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+article aside a.buy:hover,
+article aside a.buy:active { background-color: #eee; }
+#productsViewedWrapper { clear: both; }
+
+footer { width: 900px; padding: 40px 20px 20px; height: 10px; background-color: #0c3f4c; margin: 40px auto 20px; border-top: 6px solid #00a9e0; clear: both; }
+footer a { display: block; font: 0/0 serif; text-indent: -9999px; }
+footer a.xrtml { width: 128px; height: 21px; background: transparent url('../img/backg_xrtml.gif') 0 0 no-repeat; margin-top: 25px; float: left; }
+footer a.realtime { width: 99px; height: 44px; float: right; }
+
+/* ------------------ Main styles [end] ------------------ */
+
+
+/* ------------------ Print styles [start] ------------------ */
+
+@media print {
+* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+-ms-filter: none !important; } 
+a, a:visited { color: #444 !important; text-decoration: underline; }
+a[href]:after { content: " (" attr(href) ")"; }
+abbr[title]:after { content: " (" attr(title) ")"; }
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+thead { display: table-header-group; }
+tr, img { page-break-inside: avoid; }
+@page { margin: 0.5cm; }
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3{ page-break-after: avoid; }
+}
+
+/* ------------------ Print styles [end] ------------------ */

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Realtime: Storefy</title>
+<link rel="stylesheet" media="all" href="css/styles.css">
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://dfdbz2tdq3k01.cloudfront.net/js/2.1.0/ortc.js"></script>
+<script src="js/product_update.js"></script>
+</head>
+
+<body lang="en">
+
+    <header>
+	    <a href="index.html"><h1>Storefy</h1></a>
+	    <h2>a realtime demo using Realtime Messaging</h2>
+	    <h3>You’re currently browsing a <a href="http://www.realtime.co/" target="_blank">Realtime&reg;</a> demo using <a href="http://framework.realtime.co/messaging" target="_blank">Realtime Cloud Messaging</a>.</h3>
+    </header>
+
+    <article>
+	    <figure>
+            <img id="imgImage" title="T-shirt Realtime" src="img/tshirt_big_grey.jpg" alt="T-shirt Realtime" height="415" width="420" border="0" />
+	    </figure>	    
+	    <aside>
+		    
+		    <h5>T-shirt Realtime</h5>
+		    <h6>(grey)</h6>
+		    <p>A stylish tshirt for the Realtime&reg; world wide web transformation.</p>		    
+
+		    <h6 style="margin-bottom: 10px;">Available stock: 
+		    	<span id="stock">20</span>
+		    </h6>		    
+
+		    <div id="price">
+	    		<span>$19.99</span>
+	    	</div>
+
+		    <a href="javascript:;" class="buy">buy</a>
+	    </aside>
+    </article>
+
+    <footer>
+    	<p id="status" style="color: white">disconnected</h2>    
+    </footer>	    	      
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Realtime: Storefy</title>
+<link rel="stylesheet" media="all" href="css/styles.css">
+<script src="http://dfdbz2tdq3k01.cloudfront.net/js/2.1.0/ortc.js"></script>
+<script src="js/admin.js"></script>
+</head>
+
+<body lang="en">
+
+    <header>
+	    <a href="index.html"><h1>Storefy</h1></a>
+	    <h2>a realtime demo using Realtime</h2>
+	    <h3>You’re currently browsing a <a href="http://www.realtime.co/" target="_blank">Realtime&reg;</a> demo using <a href="http://framework.realtime.co/messaging/" target="_blank">Realtime Cloud Messaging</a>.</h3>
+    </header>
+
+    <article>
+        <h2 style="margin-bottom: 20px;">Price Update</h2>
+	    <fieldset>	    	
+	    	<div>
+	    			<label for="Price">
+                        Old price: <input type="text" id="oldPrice" value="19.99" />
+                        New price: <input type="text" id="newPrice" value="" />
+                        <input type="button" onclick="updatePrice();" style="cursor: pointer;" value="Update price »" />
+                    </label>
+    		</div>    		    		
+	    </fieldset>
+
+        <h2 style="margin-top: 30px; margin-bottom: 20px;">Stock Update</h2>
+        <fieldset>            
+            <div>                    
+                <input type="button" onclick="decreaseStock();" style="cursor: pointer;" value="Decrease Stock »" />
+            </div>
+        </fieldset>
+
+    </article>
+
+    <footer>
+        <p id="status" style="color: white">disconnected</h2>    
+    </footer>	
+
+</body>
+
+</html>
