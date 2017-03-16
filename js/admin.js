@@ -7,24 +7,16 @@ var client;
 var productID = 1234;
 var currentStock = 20;    
 
-// CONNECT TO REALTIME ON AZURE
+// CONNECT TO REALTIME
 
-loadOrtcFactory(IbtRealTimeSJType, function (factory, error) {
+client = RealtimeMessaging.createClient();               
+client.setClusterUrl('https://ortc-developers.realtime.co/server/ssl/2.1/');
 
-     if (error != null) {
-        console.log("Factory error: " + error.message);
-     } else {                                
-        client = factory.createClient();                
-        client.setClusterUrl('https://ortc-developers.realtime.co/server/ssl/2.1');
+client.onConnected = function() {
+    document.getElementById('status').innerHTML = "connected";
+}
 
-        client.onConnected = function() {
-            document.getElementById('status').innerHTML = "connected";
-        }
-
-        client.connect(appkey, token);           
-     }
-});
-
+client.connect(appkey, token);       
 
 // SEND PRODUCT PRICE UPDATE
 
@@ -35,8 +27,6 @@ function updatePrice(){
     
     client.send('price-update:' + productID, msg);        
 }
-
-
 
 // SEND PRODUCT STOCK UPDATE
 
